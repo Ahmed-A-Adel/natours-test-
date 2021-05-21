@@ -1,0 +1,66 @@
+body {
+  font-family: lato, sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.7;
+  color: $main-gray;
+  padding: 3rem;
+}
+/* 
+----------
+GLOABAL STYLE
+----------
+*/
+a {
+  text-decoration: none;
+}
+.btn {
+  background: $main-white;
+  color: $main-gray;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+.img {
+  width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+/* 
+----------
+END OF GLOABAL STYLE
+----------
+*/
+.heading-primary {
+  color: $main-white;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-top: 30rem;
+
+  & span {
+    display: block;
+    backface-visibility: hidden;
+  }
+  &--main {
+    animation: moveToLeft 1s ease-out;
+    -webkit-animation: moveToLeft 1s ease-out;
+    -webkit-backface-visibility: hidden;
+    margin-top: 3rem;
+  }
+  &--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 17.2px;
+    animation: moveToRight 1s ease-out;
+    -webkit-animation: moveToRight 1s ease-out;
+    margin-bottom: 5rem;
+  }
+}
