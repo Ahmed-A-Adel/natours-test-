@@ -1,6 +1,5 @@
 .row {
   max-width: $row-width;
-  background: #cbcbcb;
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $gutter-verticle;
@@ -9,7 +8,6 @@
   @include clearfix;
   //   target by attribute
   [class^="col-"] {
-    background: $primary-color;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;

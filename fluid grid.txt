@@ -1,0 +1,130 @@
+<!-- float grid layout -->
+    <section class="grid-test">
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-2">column 1 of 2</div>
+        <div class="col-1-of-2">column 1 of 2</div>
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-3">column 1 of 3</div>
+        <div class="col-1-of-3">column 1 of 3</div>
+        <div class="col-1-of-3">column 1 of 3</div>
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-3">column 1 of 3</div>
+        <div class="col-2-of-3">column 2 of 3</div>
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-1-of-4">column 1 of 4</div>
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-2-of-4">column 2 of 4</div>
+      </div>
+      <!-- end of single row -->
+
+      <!-- single row -->
+      <div class="row">
+        <div class="col-1-of-4">column 1 of 4</div>
+        <div class="col-3-of-4">column 3 of 4</div>
+      </div>
+      <!-- end of single row -->
+    </section>
+    <!-- end of float grid layout -->
+ <!-- main -->
+    <main>
+      <!-- about　section  -->
+      <section class="about-section">
+        <!-- about title -->
+        <div class="u-text-center u-margin-bottom-8">
+          <h2 class="heading-secondary">
+            Exciting tours for adventurous people
+          </h2>
+        </div>
+        <!-- single row -->
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-treatiory">
+              You're going to fall in love with nature
+            </h3>
+            <p class="row-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              sapiente praesentium provident ratione odit minus.
+            </p>
+            <h3 class="heading-treatiory">
+              Live adventures like you never have before
+            </h3>
+            <p class="row-info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              sapiente praesentium provident ratione odit minus.
+            </p>
+
+            <a href="#" class="btn-teratiory">learn more</a>
+          </div>
+          <div class="col-1-of-2"></div>
+        </div>
+        <!-- end of single row -->
+      </section>
+      <!--end of about　section  -->
+    </main>
+    <!-- end of main -->
+/* 
+----------
+ABOUT SECTION
+----------
+*/
+.about-section {
+  background: rgba($gray-light, 1);
+  padding: 25rem 0;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-image: linear-gradient($primary-color-light, $primary-color-dark);
+  background-clip: text;
+  color: transparent;
+  transition: $main-transition;
+  -webkit-transition: $main-transition;
+  -moz-transition: $main-transition;
+  -ms-transition: $main-transition;
+  -o-transition: $main-transition;
+}
+.heading-secondary:hover {
+  transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -moz-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -ms-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -o-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba($main-black, $alpha: 0.2);
+}
+
+/* 
+----------
+END OF ABOUT SECTION
+----------
+*/
+.u-text-center {
+  text-align: center;
+}
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+.about-section {
+  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20vh;
+}

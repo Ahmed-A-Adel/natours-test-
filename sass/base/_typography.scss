@@ -52,7 +52,7 @@ END OF GLOABAL STYLE
   &--main {
     animation: moveToLeft 1s ease-out;
     -webkit-animation: moveToLeft 1s ease-out;
-    -webkit-backface-visibility: hidden;
+    // -webkit-backface-visibility: hidden;
     margin-top: 3rem;
   }
   &--sub {
@@ -64,3 +64,51 @@ END OF GLOABAL STYLE
     margin-bottom: 5rem;
   }
 }
+
+/* 
+----------
+ABOUT SECTION
+----------
+*/
+.about-section {
+  background: rgba($gray-light, 1);
+  padding: 25rem 0;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-image: linear-gradient($primary-color-light, $primary-color-dark);
+  background-clip: text;
+  color: transparent;
+  transition: $main-transition;
+  -webkit-transition: $main-transition;
+  -moz-transition: $main-transition;
+  -ms-transition: $main-transition;
+  -o-transition: $main-transition;
+}
+.heading-secondary:hover {
+  transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -webkit-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -moz-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -ms-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  -o-transform: skewX(15deg) skewY(2deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba($main-black, $alpha: 0.2);
+}
+
+.heading-teratiory {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.row-info {
+  display: inline-block;
+  margin-bottom: 3.5rem;
+}
+/* 
+----------
+END OF ABOUT SECTION
+----------
+*/
