@@ -6,12 +6,22 @@ COLORS
 $primary-color: #55c57a;
 $primary-color-light: #28b485;
 $primary-color-dark: #7ed56f;
+
+$secondary-color-light: #ffb900;
+$secondary-color-dark: #ff7730;
+
+$teratiory-color-light: #2998ff;
+$teratiory-color-dark: #5643fa;
+
 $main-gray: #777;
+$main-gray-2: #eee;
+
 $gray-light: #f1f1f1;
 $main-white: rgb(255, 255, 255);
 $main-black: rgba(0, 0, 0, 0.2);
-$main-transition: all 0.2s linear;
+$main-transition: all 0.3s ease;
 $default-font-size: 1.8rem;
+$main-box-shadow: 0 0.5rem 1rem $main-black;
 
 /* 
 ----------

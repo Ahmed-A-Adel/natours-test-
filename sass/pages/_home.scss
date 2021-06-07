@@ -1,0 +1,24 @@
+.about-section {
+  clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20vh;
+}
+
+.features-section {
+  padding: 20rem 0;
+  margin-top: -8rem;
+  background: linear-gradient(
+      to right bottom,
+      rgba($primary-color-dark, 0.801),
+      rgba($primary-color-light, 0.801)
+    ),
+    url(../img/nat-4.jpg) center/cover no-repeat;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+.tours-section {
+  padding: 25rem 0 50rem 0;
+  margin-top: -8.1rem;
+  background: $gray-light;
+}
