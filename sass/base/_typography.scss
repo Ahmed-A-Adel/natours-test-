@@ -13,18 +13,7 @@ GLOABAL STYLE
 a {
   text-decoration: none;
 }
-.btn {
-  background: $main-white;
-  color: $main-gray;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  -webkit-border-radius: 10rem;
-  -moz-border-radius: 10rem;
-  -ms-border-radius: 10rem;
-  -o-border-radius: 10rem;
-}
+
 .img {
   width: 100%;
   display: block;
@@ -80,7 +69,11 @@ ABOUT SECTION
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   display: inline-block;
-  background-image: linear-gradient($primary-color-light, $primary-color-dark);
+  background-image: linear-gradient(
+    to right,
+    $primary-color-dark,
+    $primary-color-light
+  );
   background-clip: text;
   color: transparent;
   transition: $main-transition;
