@@ -15,7 +15,15 @@ $teratiory-color-dark: #5643fa;
 
 $main-gray: #777;
 $main-gray-2: #eee;
+$main-gray-3: #999;
 
+$main-gradint: linear-gradient(
+  to right bottom,
+  $primary-color-dark,
+  $primary-color-light
+);
+
+$main-radius: 3px;
 $gray-light: #f1f1f1;
 $main-white: rgb(255, 255, 255);
 $main-black: rgba(0, 0, 0, 0.2);
