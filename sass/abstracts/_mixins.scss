@@ -5,3 +5,15 @@
     clear: both;
   }
 }
+@mixin top-line {
+  border-top: 1px solid $main-gray;
+  display: inline-block;
+  padding-top: 2rem;
+}
+
+@mixin place-item-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
