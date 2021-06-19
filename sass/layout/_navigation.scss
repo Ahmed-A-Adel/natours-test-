@@ -38,6 +38,7 @@
     transition: all 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     z-index: 15;
     opacity: 0;
+    visibility: hidden;
   }
   &__list {
     @include place-item-center;
@@ -83,6 +84,7 @@
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;
+    visibility: visible;
     width: 100%;
   }
   // ---- icon -----
@@ -110,7 +112,7 @@
     }
     &::after {
       transform: translateY(0.8rem);
-      height: 4px;
+      backface-visibility: hidden;
     }
   }
   &__button:hover &__icon::before {
@@ -118,7 +120,6 @@
   }
   &__button:hover &__icon::after {
     transform: translateY(1rem);
-    height: 3px;
   }
 
   &__checkbox:checked + &__button &__icon {
@@ -131,6 +132,5 @@
   &__checkbox:checked + &__button &__icon::after {
     transform: rotate(135deg);
     top: 0;
-    height: 3px;
   }
 }
